@@ -113,4 +113,12 @@ module.exports = {
     //   }
     // }
   // }
+  solc: {
+      settings: {
+        optimizer: {
+          enabled: true,
+          runs: 1500
+        }
+      }
+    }
 };
