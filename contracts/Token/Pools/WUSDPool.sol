@@ -73,10 +73,6 @@ contract WUSDPool is Owned {
 
     /* ========== MODIFIERS ========== */
 
-    modifier onlyByOwnGov() {
-        require(msg.sender == owner, "Not owner");
-        _;
-    }
 
     modifier notRedeemPaused() {
         require(redeemPaused == false, "Redeeming is paused");
@@ -152,7 +148,7 @@ contract WUSDPool is Owned {
         }
     }
 
-    function setCollatETHOracle(address _collateral_weth_oracle_address, address _weth_address) external onlyByOwnGov {
+    function setCollatETHOracle(address _collateral_weth_oracle_address, address _weth_address) external onlyOwner {
         collat_eth_oracle_address = _collateral_weth_oracle_address;
         collatEthOracle = UniswapPairOracle(_collateral_weth_oracle_address);
         weth_address = _weth_address;
@@ -438,7 +434,7 @@ contract WUSDPool is Owned {
     }
 
     // Combined into one function due to 24KiB contract memory limit
-    function setPoolParameters(uint256 new_ceiling, uint256 new_bonus_rate, uint256 new_redemption_delay, uint256 new_mint_fee, uint256 new_redeem_fee, uint256 new_buyback_fee, uint256 new_recollat_fee) external onlyByOwnGov {
+    function setPoolParameters(uint256 new_ceiling, uint256 new_bonus_rate, uint256 new_redemption_delay, uint256 new_mint_fee, uint256 new_redeem_fee, uint256 new_buyback_fee, uint256 new_recollat_fee) external onlyOwner {
         pool_ceiling = new_ceiling;
         bonus_rate = new_bonus_rate;
         redemption_delay = new_redemption_delay;
