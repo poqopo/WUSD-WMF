@@ -30,14 +30,14 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.6+commit.6c089d02\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"uniswapV2Call\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Token/Uniswap/interfaces/IUniswapV2Callee.sol\":\"IUniswapV2Callee\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Token/Uniswap/interfaces/IUniswapV2Callee.sol\":{\"keccak256\":\"0xb3512585ca35e9a9ead4d93184d8ced6972bda4ecf74b9e1952d06ab297b5fb3\",\"urls\":[\"bzz-raw://7e49216bb68be2d169484ef9619ec846ec84818a8ec54b6456ffdf1bd166f81f\",\"dweb:/ipfs/Qmevi98LNe3hHo5RXBHFNktbZzkuoJu8ucewDdUcNEEvCM\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.6+commit.6c089d02\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount0\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount1\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"uniswapV2Call\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Token/Uniswap/interfaces/IUniswapV2Callee.sol\":\"IUniswapV2Callee\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Token/Uniswap/interfaces/IUniswapV2Callee.sol\":{\"keccak256\":\"0x195feb115718bc9523d90f2d9d0b60252ef0761d88832e86106a3b8b5e844ef0\",\"urls\":[\"bzz-raw://00f8fa59a5628db8984f0c58b4c75237de9b8e19b9124f4d10821f17c0f1b443\",\"dweb:/ipfs/QmWBVQoZoww59CP7LSoUTfuvmxthETYG6Lbm4z7CEYN5qp\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity =0.6.6;\r\n\r\ninterface IUniswapV2Callee {\r\n    function uniswapV2Call(address sender, uint amount0, uint amount1, bytes calldata data) external;\r\n}",
-  "sourcePath": "C:\\Users\\82102\\Desktop\\WUSD, WMF\\contracts\\Token\\Uniswap\\interfaces\\IUniswapV2Callee.sol",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity =0.6.6;\n\ninterface IUniswapV2Callee {\n    function uniswapV2Call(address sender, uint amount0, uint amount1, bytes calldata data) external;\n}",
+  "sourcePath": "/Users/gubukson/WUSD-WMF/contracts/Token/Uniswap/interfaces/IUniswapV2Callee.sol",
   "ast": {
     "absolutePath": "project:/contracts/Token/Uniswap/interfaces/IUniswapV2Callee.sol",
     "exportedSymbols": {
@@ -57,7 +57,7 @@
           ".6"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:23:16"
+        "src": "32:23:16"
       },
       {
         "abstract": false,
@@ -96,7 +96,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 4811,
-                  "src": "117:14:16",
+                  "src": "113:14:16",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -107,7 +107,7 @@
                     "id": 4801,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "117:7:16",
+                    "src": "113:7:16",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -125,7 +125,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 4811,
-                  "src": "133:12:16",
+                  "src": "129:12:16",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -136,7 +136,7 @@
                     "id": 4803,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "133:4:16",
+                    "src": "129:4:16",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -153,7 +153,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 4811,
-                  "src": "147:12:16",
+                  "src": "143:12:16",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -164,7 +164,7 @@
                     "id": 4805,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "147:4:16",
+                    "src": "143:4:16",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -181,7 +181,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 4811,
-                  "src": "161:19:16",
+                  "src": "157:19:16",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -192,7 +192,7 @@
                     "id": 4807,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "161:5:16",
+                    "src": "157:5:16",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -202,26 +202,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "116:65:16"
+              "src": "112:65:16"
             },
             "returnParameters": {
               "id": 4810,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "190:0:16"
+              "src": "186:0:16"
             },
             "scope": 4812,
-            "src": "94:97:16",
+            "src": "90:97:16",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
         "scope": 4813,
-        "src": "60:134:16"
+        "src": "57:132:16"
       }
     ],
-    "src": "33:161:16"
+    "src": "32:157:16"
   },
   "legacyAST": {
     "attributes": {
@@ -244,7 +244,7 @@
         },
         "id": 4800,
         "name": "PragmaDirective",
-        "src": "33:23:16"
+        "src": "32:23:16"
       },
       {
         "attributes": {
@@ -308,12 +308,12 @@
                         },
                         "id": 4801,
                         "name": "ElementaryTypeName",
-                        "src": "117:7:16"
+                        "src": "113:7:16"
                       }
                     ],
                     "id": 4802,
                     "name": "VariableDeclaration",
-                    "src": "117:14:16"
+                    "src": "113:14:16"
                   },
                   {
                     "attributes": {
@@ -336,12 +336,12 @@
                         },
                         "id": 4803,
                         "name": "ElementaryTypeName",
-                        "src": "133:4:16"
+                        "src": "129:4:16"
                       }
                     ],
                     "id": 4804,
                     "name": "VariableDeclaration",
-                    "src": "133:12:16"
+                    "src": "129:12:16"
                   },
                   {
                     "attributes": {
@@ -364,12 +364,12 @@
                         },
                         "id": 4805,
                         "name": "ElementaryTypeName",
-                        "src": "147:4:16"
+                        "src": "143:4:16"
                       }
                     ],
                     "id": 4806,
                     "name": "VariableDeclaration",
-                    "src": "147:12:16"
+                    "src": "143:12:16"
                   },
                   {
                     "attributes": {
@@ -392,17 +392,17 @@
                         },
                         "id": 4807,
                         "name": "ElementaryTypeName",
-                        "src": "161:5:16"
+                        "src": "157:5:16"
                       }
                     ],
                     "id": 4808,
                     "name": "VariableDeclaration",
-                    "src": "161:19:16"
+                    "src": "157:19:16"
                   }
                 ],
                 "id": 4809,
                 "name": "ParameterList",
-                "src": "116:65:16"
+                "src": "112:65:16"
               },
               {
                 "attributes": {
@@ -413,22 +413,22 @@
                 "children": [],
                 "id": 4810,
                 "name": "ParameterList",
-                "src": "190:0:16"
+                "src": "186:0:16"
               }
             ],
             "id": 4811,
             "name": "FunctionDefinition",
-            "src": "94:97:16"
+            "src": "90:97:16"
           }
         ],
         "id": 4812,
         "name": "ContractDefinition",
-        "src": "60:134:16"
+        "src": "57:132:16"
       }
     ],
     "id": 4813,
     "name": "SourceUnit",
-    "src": "33:161:16"
+    "src": "32:157:16"
   },
   "compiler": {
     "name": "solc",
@@ -436,7 +436,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-12T06:14:02.826Z",
+  "updatedAt": "2022-01-12T06:43:16.807Z",
   "devdoc": {
     "methods": {}
   },
